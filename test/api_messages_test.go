@@ -15,13 +15,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	openapiclient "github.com/winking324/bandwidth"
+	"github.com/winking324/bandwidth/pkg/bandwidth"
 )
 
 func Test_openapi_MessagesAPIService(t *testing.T) {
 
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
+	configuration := bandwidth.NewConfiguration()
+	apiClient := bandwidth.NewAPIClient(configuration)
 
 	t.Run("Test MessagesAPIService CreateMessage", func(t *testing.T) {
 

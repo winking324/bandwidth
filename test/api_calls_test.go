@@ -15,7 +15,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/winking324/bandwidth"
+	"github.com/winking324/bandwidth/pkg/bandwidth"
 )
 
 func Test_openapi_CallsAPIService(t *testing.T) {

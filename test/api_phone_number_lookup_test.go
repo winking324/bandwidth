@@ -15,13 +15,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	openapiclient "github.com/winking324/bandwidth"
+	"github.com/winking324/bandwidth/pkg/bandwidth"
 )
 
 func Test_openapi_PhoneNumberLookupAPIService(t *testing.T) {
 
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
+	configuration := bandwidth.NewConfiguration()
+	apiClient := bandwidth.NewAPIClient(configuration)
 
 	t.Run("Test PhoneNumberLookupAPIService CreateLookup", func(t *testing.T) {
 
